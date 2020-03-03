@@ -15,7 +15,13 @@ public class PrzykladStatic {
         PrzykladStatic.poleStatyczne);
 
         PrzykladStatic object1 = new PrzykladStatic(10);
-        System.out.println("Pole statyczne przez obiekt " + object1.poleStatyczne);
+        System.out.println("Pole statyczne przez obiekt1 " + object1.poleStatyczne);
+
+        PrzykladStatic object2 = new PrzykladStatic(15);
+        object2.poleStatyczne = -20;
+        System.out.println("Pole statyczne po zmianie przez obiekt2 " + PrzykladStatic.poleStatyczne);
+        System.out.println("Pole statyczne po zmianie przez obiekt1 " + object1.poleStatyczne);
+        System.out.println("Pole statyczne po zmianie przez klasę " + PrzykladStatic.poleStatyczne);
 
         // do pola instancji-obiektu - czyli zmiennych nistatycznych - możemy odnosić się tylko przy pomocy nazwy obiektu kropki i nazwy pola instancji,
         // ale nie możemy odnosić się przy pomocy nazwy klasy
